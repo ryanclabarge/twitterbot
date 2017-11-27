@@ -7,7 +7,7 @@ auth.set_access_token(settings.access_token,settings.access_secret)
 
 api = tweepy.API(auth)
 
-public_tweets = api.user_timeline(screen_name='arlabarge',count=2)
+public_tweets = api.user_timeline(screen_name='arlabarge',count=1)
 for tweet in public_tweets:
     print(tweet.text)
 
